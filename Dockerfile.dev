@@ -2,9 +2,11 @@ FROM node:alpine
 
 WORKDIR '/app'
 
+#install some dependencies
 COPY package.json .
-
+#npm install will run anytime we have changes above "RUN npm install"
 RUN npm install
+
 COPY . .
 
 CMD ["npm", "run", "start"]

@@ -11,7 +11,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React on Docker !! </h1>
         </header>
         <p className="App-intro">
-         Dockerfile vs Dockerfile.dev with docker-compose.yml
+         Dockerfile vs Dockerfile.dev with docker-compose.yaml<br/>
+            AppName: frontend<br/>
+            Dir: <code>docker-prod/frontend</code>
         </p>
       </div>
     );
